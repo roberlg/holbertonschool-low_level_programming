@@ -1,3 +1,13 @@
+Holberton School - 0x00. C - Hello, World
+
+NEW COMMANDS:
+
+  -  gcc
+  -  printf 
+  -  puts
+  -  putchar
+
+
 
 0. Preprocessor
 
