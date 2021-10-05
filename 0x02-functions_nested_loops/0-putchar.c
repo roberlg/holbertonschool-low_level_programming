@@ -4,7 +4,7 @@
  * Return: 0 on sucess.
  */
 
-int main(void);
+int main(void)
 {
 	int i;
 	char c[] = "_putchar";
@@ -14,7 +14,7 @@ int main(void);
 		_putchar c[(i)];
 	}
 
-		_putchar (\n);
+		_putchar ('\n');
 
 	return (0);
 }
