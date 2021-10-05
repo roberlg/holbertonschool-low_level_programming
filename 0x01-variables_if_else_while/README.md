@@ -1,4 +1,4 @@
-0x01. C - Variables, if, else, while
+HOLBERTON SCHOOL= 0x01. C - Variables, if, else, while
 
 Learning Objectives
 
