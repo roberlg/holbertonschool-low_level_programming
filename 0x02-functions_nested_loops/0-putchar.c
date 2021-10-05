@@ -1,6 +1,6 @@
-#include <main.h>
+#include "main.h"
 /**
- * main- print string " _putchar" from character array.
+ * main - print string " _putchar" from character array.
  * Return: 0 on sucess.
  */
 
