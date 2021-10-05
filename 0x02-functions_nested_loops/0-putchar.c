@@ -1,7 +1,7 @@
 #include <main.h>
 /**
  * main- print string " _putchar" from character array.
- * Return 0 on sucess.
+ * Return: 0 on sucess.
  */
 
 int main(void);
