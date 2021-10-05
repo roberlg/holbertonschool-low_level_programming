@@ -1,6 +1,7 @@
-#include <stdio.h>
 #include <main.h>
 /**
+ * print string " _putchar"
+ * return 0
  */
 
 int main(void)
