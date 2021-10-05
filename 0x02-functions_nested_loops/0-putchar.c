@@ -1,3 +1,4 @@
+#include "stdio.h"
 #include "main.h"
 /**
  * main - print string " _putchar" from character array.
