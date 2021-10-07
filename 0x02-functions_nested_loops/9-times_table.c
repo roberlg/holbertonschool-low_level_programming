@@ -2,7 +2,7 @@
 /**
  * times_table - prints times table up to 9, starting with 0.
  *
- * Return: 0
+ * Return: void
  *
  **/
 
@@ -37,5 +37,5 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
+	return (void);
 }
