@@ -1,4 +1,4 @@
-HOLBERTON SCHOOL = 0X07. C- Even more pointers, arrays and strings 
+HOLBERTON SCHOOL = 0X07. C- Even more pointers, arrays and strings
 
 General
 
@@ -26,3 +26,4 @@ General
 More Info
 
 You do not need to learn about pointers to functions, arrays of structures, malloc and free - yet.
+~                                                                                                  
