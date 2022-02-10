@@ -1,5 +1,7 @@
 # HOLBERTON SCHOOL- low_level_programming
 
-Projects 
+  - In this repository you will find the projects related to low-level programming in C language that I had to do in Holberton School. 
 
-1) [0x00-hello_world](https://github.com/roberlg/holbertonschool-low_level_programming/tree/main/0x00-hello_world)
+## Projects 
+
+   - [0x00-hello_world](https://github.com/roberlg/holbertonschool-low_level_programming/tree/main/0x00-hello_world)
