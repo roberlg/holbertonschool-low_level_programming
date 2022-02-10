@@ -1,6 +1,6 @@
 # HOLBERTON SCHOOL- low_level_programming
 
-  - In this repository you will find the projects related to low-level programming in C language that we working in Holberton School. 
+  - In this repository you will find the projects related to low-level programming in C language that working in Holberton School. 
 
 ## Projects 
 
