@@ -1,4 +1,5 @@
 #include <unistd.h>
+
 /**
  * _putchar - writes the character c to stdout
  * print_alphabet - prints alphabet and returns new line
@@ -26,6 +27,7 @@
  * print a triangle of n size
  * reset_to_98 - takes pointer int and update the value to 98
  **/
+
 int _putchar(char);
 void print_alphabet(void);
 void print_alphabet_x10(void);
