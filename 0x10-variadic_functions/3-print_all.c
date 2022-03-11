@@ -1,67 +1,86 @@
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include "variadic_functions.h"
 
-void i_print(va_list i)
+/**
+  * p_char - prints characters
+  * @c: character to print
+  */
+
+void p_char(va_list c)
 {
-	printf("%d", va_arg(i, int);
-}
-
-void c_print(va_list i)
-{
-	printf("%c", va_arg(i, char);
-}
-
-void f_print(va_list i)
-{
-	printf("%f", va_arg(i, float);
-}
-
-void s_print(va_list i)
-{
-	if (va_arg(i, char *) == NULL)
-		printf("(nil");
-	else
-		printf("%s", va_arg(i, char *);
-}
-
-typedef struct print
-{
-	char var;
-	void (*func)(va_list);
-}print_t;
-
-void print_one(char a, va_list ap)
-{
-	int i;
-	print_t list[] = {
-		{'c', i_print},
-		{'i', c_print},
-		{'f', f_print},
-		{'s', s_print},
-		{NULL, NULL},
-	};
-
-	i = 0;
-	while (i < 4)
-	{
-		if (a = list.var[i])
-			list.func[i](ap);
-		i++;
-	}
+	printf("%c", va_arg(c, int));
 }
 
 /**
- * print_all - print any type
- * @format - type of variable to print
- * Return: void
- **/
+  * p_int - prints integers
+  * @i: integer to print
+  */
+
+void p_int(va_list i)
+{
+	printf("%d", va_arg(i, int));
+}
+
+/**
+  * p_float - prints floats
+  * @f: float to print
+  */
+
+void p_float(va_list f)
+{
+	printf("%f", va_arg(f, double));
+}
+
+/**
+  * p_string - prints strings
+  * @s: string to print
+  */
+
+void p_string(va_list s)
+{
+	char *string;
+
+	string = va_arg(s, char *);
+	if (string == NULL)
+		string = "(nil)";
+	printf("%s", string);
+}
+
+/**
+  * print_all - prints any argument passed into it
+  * @format: formats symbols in order
+  */
 
 void print_all(const char * const format, ...)
 {
-	int i;
+	unsigned int i, j;
+	char *separator;
+	va_list argp;
+	v_types valid_types[] = {
+		{"c", p_char},
+		{"i", p_int},
+		{"f", p_float},
+		{"s", p_string}
+	};
 
-	i = 0;
-	while (i < for
+	i = j = 0;
+	separator = "";
+	va_start(argp, format);
+	while (format && format[i])
+	{
+		j = 0;
+		while (j < 4)
+		{
+			if (format[i] == *valid_types[j].valid)
+			{
+				printf("%s", separator);
+				valid_types[j].f(argp);
+				separator = ", ";
+			}
+			j++;
+		}
+		i++;
+	}
+	printf("\n");
 }
